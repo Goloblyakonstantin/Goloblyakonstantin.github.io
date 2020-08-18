@@ -128,7 +128,7 @@ class Thing
     if (k===this.labelName) //this.label = v;
     return this;
   }
-  rotate(k, v)  //новая функция для анимации , вместо КСС . сама функция с остальными в утилс.js
+  rotate(k, v)  //новый метод для анимации , вместо КСС . сама функция с остальными в утилс.js
   {
     this[k]=Math.floor(this[k])+Math.floor(v);
     rotate(this.cell.getContainer(),this[k]);
