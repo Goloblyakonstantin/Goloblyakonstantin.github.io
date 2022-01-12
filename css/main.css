@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #344054;
+  font-family: Inter;
 }
 a{
   color: black;
@@ -11,9 +13,29 @@ ul{
   list-style: none;
 }
 
-
+.txt-14{
+  font-size: 14px;
+}
+.txt-16{
+  font-size: 16px;
+}
+.txt-18{
+  font-size: 18px;
+}
+.txt-20{
+  font-size: 20px;
+}
+.txt-24{
+  font-size: 24px;
+}
+.txt-26{
+  font-size: 26px;
+}
 .txt-36{
   font-size: 36px;
+}
+.txt-46{
+  font-size: 46px;
 }
 .txt-48{
   font-size: 48px;
@@ -21,8 +43,20 @@ ul{
 .txt-69{
   font-size: 69px;
 }
+.col-dark{
+  color: #344054;
+}
+.col-white{
+  color: #FFFFFF;
+}
 .col-orange{
   color: #F38118;
+}
+.trans-upper{
+  text-transform: uppercase;
+}
+.fw-600{
+  font-weight: 600;
 }
 
 
@@ -78,14 +112,17 @@ ul{
 .contacts-block img{
   width: 14px;
   height: 14px;
+  margin: 0 12px 0 0;
 }
 .contacts-block__addr{
   display: flex;
+  align-items: center;
   padding: 0 54px 0 0;
   text-transform: uppercase;
 }
 .contacts-block__tel{
   display: flex;
+  align-items: center;
   text-transform: uppercase;
 }
 
@@ -198,7 +235,7 @@ ul{
 }
 .way-block__item-title{
   position: absolute;
-  padding: 28px 0;
+  padding: 28px 0 0 28px;
 }
 
 .slider-block__items{
@@ -305,6 +342,9 @@ ul{
 }
 .blog-block__item.big{
   grid-row: 1/4;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
 }
 .blog-block__item-title{
   padding: 0 0 20px 0;
@@ -375,4 +415,172 @@ ul{
 .footer-reg-info-block__wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.breadscrumb-block{
+  padding: 40px 0 60px 0;
+}
+.breadscrumb-block__items{
+  display: flex;
+  align-items: center;
+}
+.breadscrumb-block__item:not(:last-child){
+  padding: 0 12px 0 0;
+  opacity: .5;
+}
+
+
+.training-ways-block{
+  padding: 0 0 60px 0;
+}
+.training-ways-block__info{
+  display: flex;
+  place-content: space-between;
+}
+.training-ways-block__subtitle{
+  max-width: 40%;
+}
+.training-ways-block__sort{
+  display: flex;
+  padding: 14px 0;
+  border-bottom: 1px solid #D0D5DD;
+}
+.training-ways-block__sort-item{
+  padding: 0 40px 0 0;
+}
+.training-ways-block__sort-item:not(.active){
+  opacity: .5;
+}
+
+.training-ways-block__items{
+  display: flex;
+  flex-flow: column;
+}
+.training-ways-block__item{
+  display: flex;
+  place-content: end;
+  margin: 60px 0 0 0;
+  background-color: #F8F8F8;
+  border-radius: 20px;
+}
+.training-ways-block__item > img{
+  height: 300px;
+  max-width: 280px;
+}
+.training-ways-block__item-info{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 400px;
+}
+.training-ways-block__item-title{
+  padding: 40px 0 20px 0;
+}
+.training-ways-block__item-subtitle{
+  width: 80%;
+}
+.training-ways-block__item-list{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  min-width: 420px;
+  margin: 20px 0;
+  padding: 0 50px 0 50px;
+  border-left: 1px solid #D0D5DD;
+}
+.training-ways-block__item-list-item{
+  display: flex;
+  align-items: center;
+}
+.training-ways-block__item-list-item:not(:last-child){
+  padding: 0 0 20px 0;
+}
+.training-ways-block__item-list-title{
+  padding: 0 0 0 20px;
+}
+
+
+
+.single-usluga-hello-block{
+  background-color: #F8F8F8;
+}
+.single-usluga-hello-block__wrapper{
+  display: flex;
+  align-items: center;
+}
+.single-usluga-hello-block__subtitle{
+  padding: 30px 0 75px 0;
+}
+.single-usluga-hello-block__info{
+  display: flex;
+}
+.single-usluga-hello-block__info p:first-child{
+  padding: 0 30px 0 0;
+}
+
+.single-usluga-pluses-block{
+  padding: 80px 0;
+}
+.single-usluga-pluses-block__items{
+  display: flex;
+  flex-wrap: wrap;
+  grid-row-gap: 80px;
+}
+.single-usluga-pluses-block__item{
+  width: 50%;
+}
+.single-usluga-pluses-block__item-title{
+  padding: 20px 0;
+}
+.single-usluga-pluses-block__item-subtitle{
+  max-width: 80%;
+}
+
+
+.rules-block{
+  padding: 60px 0;
+}
+.rules-block__title-block{
+  display: flex;
+  place-content: space-between;
+  padding: 28px 0;
+}
+.rules-block__items{
+  display: flex;
+  place-content: space-between;
+}
+.rules-block__item{
+  max-width: 300px;
+}
+.rules-block__item-num{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #344054;
+  border-radius: 50%;
+}
+.rules-block__item-title{
+  padding: 20px 0;
+}
+
+
+.prices-block{
+  padding: 0 0 160px 0;
+}
+.prices-block__items-title{
+  margin: 20px 0 20px 0;
+}
+.prices-block__item{
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+  background-color: #F8F8F8;
+  padding: 14px 40px;
+  margin: 0 0 20px 0;
+  border-radius: 20px;
+}
+.prices-block__snoska{
+  text-align: center;
 }
