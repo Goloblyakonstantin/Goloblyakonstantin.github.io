@@ -31,6 +31,11 @@
               <img src="./img/ico-tel.svg" alt="">
               <a href="tel:+74994944949" class="txt-14">+7 499 494-49-49</a>
             </div>
+            <div class="contacts-block__burger" onclick="change_menu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -157,7 +162,7 @@
 
             <div class="rules-block__item">
               <div class="rules-block__item-num">
-                <p>1</p>
+                <p class="txt-16 col-white">1</p>
               </div>
               <p class="rules-block__item-title txt-24 fw-600">Подготовка</p>
               <p class="rules-block__item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum malesuada pharetra donec diam vivamus in.</p>
@@ -165,7 +170,7 @@
 
             <div class="rules-block__item">
               <div class="rules-block__item-num">
-                <p>2</p>
+                <p class="txt-16 col-white">2</p>
               </div>
               <p class="rules-block__item-title txt-24 fw-600">Форма</p>
               <p class="rules-block__item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum malesuada pharetra donec diam vivamus in.</p>
@@ -173,7 +178,7 @@
 
             <div class="rules-block__item">
               <div class="rules-block__item-num">
-                <p>3</p>
+                <p class="txt-16 col-white">3</p>
               </div>
               <p class="rules-block__item-title txt-24 fw-600">Правильный настрой</p>
               <p class="rules-block__item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum malesuada pharetra donec diam vivamus in.</p>
@@ -193,14 +198,14 @@
             <div class="prices-block__item">
               <p class="prices-block__item-time txt-18">9:00 - 16:00</p>
               <p class="prices-block__item-price0 txt-18 fw-600">Стандарт: 450 ₽</p>
-              <p class="prices-block__item-price1 txt-18 fw-600">Стандарт: 350 ₽</p>
+              <p class="prices-block__item-price1 txt-18 fw-600">Льготный: 350 ₽</p>
               <a href="#" class="btn-dark">Записаться</a>
             </div>
 
             <div class="prices-block__item">
               <p class="prices-block__item-time txt-18">16:00 - 23:00</p>
               <p class="prices-block__item-price0 txt-18 fw-600">Стандарт: 550 ₽</p>
-              <p class="prices-block__item-price1 txt-18 fw-600">Стандарт: 450 ₽</p>
+              <p class="prices-block__item-price1 txt-18 fw-600">Льготный: 450 ₽</p>
               <a href="#" class="btn-dark">Записаться</a>
             </div>
 
@@ -209,14 +214,14 @@
             <div class="prices-block__item">
               <p class="prices-block__item-time txt-18">9:00 - 16:00</p>
               <p class="prices-block__item-price0 txt-18 fw-600">Стандарт: 550 ₽</p>
-              <p class="prices-block__item-price1 txt-18 fw-600">Стандарт: 450 ₽</p>
+              <p class="prices-block__item-price1 txt-18 fw-600">Льготный: 450 ₽</p>
               <a href="#" class="btn-dark">Записаться</a>
             </div>
 
             <div class="prices-block__item">
               <p class="prices-block__item-time txt-18">16:00 - 23:00</p>
               <p class="prices-block__item-price0 txt-18 fw-600">Стандарт: 450 ₽</p>
-              <p class="prices-block__item-price1 txt-18 fw-600">Стандарт: 350 ₽</p>
+              <p class="prices-block__item-price1 txt-18 fw-600">Льготный: 350 ₽</p>
               <a href="#" class="btn-dark">Записаться</a>
             </div>
 
@@ -260,13 +265,21 @@
         </div>
       </div>
       <div class="footer-reg-info-block content">
-        <div class="footer-main-block__wrapper row">
+        <div class="footer-reg-block__wrapper row">
           <p class="txt-12 col-white">2021. Все права защищены</p>
           <p class="txt-12 col-white">Cookies</p>
           <a href="#" class="txt-12 col-white">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+
+      function change_menu(x) {
+        x.classList.toggle("active");
+        document.querySelector('.menu-main-block').classList.toggle("active");
+      }
+    </script>
 
 
   </body>

@@ -31,6 +31,11 @@
               <img src="./img/ico-tel.svg" alt="">
               <a href="tel:+74994944949" class="txt-14">+7 499 494-49-49</a>
             </div>
+            <div class="contacts-block__burger" onclick="change_menu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -382,13 +387,21 @@
         </div>
       </div>
       <div class="footer-reg-info-block content">
-        <div class="footer-main-block__wrapper row">
+        <div class="footer-reg-block__wrapper row">
           <p class="txt-12 col-white">2021. Все права защищены</p>
           <p class="txt-12 col-white">Cookies</p>
           <a href="#" class="txt-12 col-white">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+
+      function change_menu(x) {
+        x.classList.toggle("active");
+        document.querySelector('.menu-main-block').classList.toggle("active");
+      }
+    </script>
 
 
   </body>

@@ -31,6 +31,11 @@
               <img src="./img/ico-tel.svg" alt="">
               <a href="tel:+74994944949" class="txt-14">+7 499 494-49-49</a>
             </div>
+            <div class="contacts-block__burger" onclick="change_menu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -61,8 +66,8 @@
         <div class="hello-block__wrapper row">
           <div class="hello-block__left">
             <p class="txt-14">сеть скалодромов</p>
-            <h1 class="txt-69 fw-600">СКАЛОДРОМ<br/>АТОМ</h1>
-            <p class="txt-16">Наш скалодром — это возможность для любого человека попробовать себя в скалолазании. «Атом» предназначен для проведения индивидуальных и групповых тренировок, а также соревнований разного масштаба</p>
+            <h1 class="hello-block__title txt-69 fw-600">СКАЛОДРОМ<br/>АТОМ</h1>
+            <p class="hello-block__subtitle txt-16">Наш скалодром — это возможность для любого человека попробовать себя в скалолазании. «Атом» предназначен для проведения индивидуальных и групповых тренировок, а также соревнований разного масштаба</p>
             <div class="hello-block__info">
               <div class="hello-block__info-square">
                 <img src="./img/ico-ellips.svg" alt="">
@@ -73,7 +78,7 @@
                 <p class="txt-14">м. Политехническая</p>
               </div>
             </div>
-            <a href="#" class="btn-dark txt-16">Записаться на занятие</a>
+            <a href="#" class="hello-block__link btn-dark txt-16">Записаться на занятие</a>
           </div>
           <div class="hello-block__right">
             <img src="./img/helmet.png" alt="">
@@ -365,7 +370,7 @@
         </div>
       </div>
       <div class="footer-reg-info-block content">
-        <div class="footer-main-block__wrapper row">
+        <div class="footer-reg-block__wrapper row">
           <p class="txt-12 col-white">2021. Все права защищены</p>
           <p class="txt-12 col-white">Cookies</p>
           <a href="#" class="txt-12 col-white">Политика конфиденциальности</a>
@@ -373,6 +378,13 @@
       </div>
     </footer>
 
+    <script type="text/javascript">
+
+      function change_menu(x) {
+        x.classList.toggle("active");
+        document.querySelector('.menu-main-block').classList.toggle("active");
+      }
+    </script>
 
   </body>
 </html>
